@@ -15,7 +15,7 @@
     - Вводим Email
     - Вводим Password
     - Вводим Password Confirmation
-    - Нажать кнопку Submit
+    - Нажимаем кнопку Submit
   expected-result: |
     Пользователь должен попасть на главную страницу
 
@@ -35,7 +35,7 @@
     - Вводим Email
     - Вводим Password
     - Вводим Password Confirmation
-    - Нажать кнопку Submit
+    - Нажимаем кнопку Submit
   expected-result: |
     Пользователь должен получить сообщение об ошибке
 
