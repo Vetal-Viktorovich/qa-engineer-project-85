@@ -15,7 +15,7 @@
     - Вводим Email
     - Вводим Password
     - Вводим Password Confirmation
-    - Нажимаем кнопку Submit
+    - Нажимаем кнопку "Submit"
   expected-result: |
     Пользователь должен попасть на главную страницу
 
@@ -35,22 +35,58 @@
     - Вводим Email
     - Вводим Password
     - Вводим Password Confirmation
-    - Нажимаем кнопку Submit
+    - Нажимаем кнопку "Submit"
   expected-result: |
     Пользователь должен получить сообщение об ошибке
 
 - summary: |
-    Проверка входа пользователя с существующими логином и паролем
+    Проверка авторизации пользователя с существующими логином и паролем
   requirement: |
     При верном вводе логине и пароля пользователь должен войти в систему
   prerequisites: |
     Открыта страница авторизации
+    Пользователь зарегестрирован на сайте
   test-data: |
     Email = Vanya@mail.ru
     Password = zHP-wA7-7yy-xR3
   steps:
     - Вводим Email
     - Вводим Password
-    - Нажимаем кнопку Submit
+    - Нажимаем кнопку "Submit"
   expected-result: |
     Пользователь должен попасть на главную страницу
+
+- summary: |
+    Проверка авторизации пользователя с помощью Github
+  requirement: |
+    Пользователь должен иметь возможность авторизоваться с помощью Github
+  prerequisites: |
+    Открыта страница авторизации
+    Пользователь зарегестрировн на Github
+  test-data: |
+    no-data
+  steps:
+    - Нажать кнопку  "Sign in with Github" 
+  expected-result: |
+    Пользователь должен попасть на главную страницу
+
+- summary: |
+    Проверка авторизации пользователя с помощью Discord  
+  requirement: |
+    Пользователь должен иметь возможность авторизоваться с помощью Discord 
+  prerequisites: |
+    Открыта страница авторизации
+    Пользователь зарегестрировн на Discord
+  test-data: |
+    no-data
+  steps:
+    - Нажать кнопку  "Sign in with Discord" 
+  expected-result: |
+    Пользователь должен попасть на главную страницу
+
+- summary: |
+  requirement: |
+  prerequisites: |
+  test-data: |
+  steps:
+  expected-result: |
