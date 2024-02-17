@@ -109,9 +109,22 @@
   test-data: |
     no-data
   steps:
-  - Открываем вкладку "TOURNAMENTS"
-  - Нажимаем кнопку "You may want to create one"
-  - Скролим ввниз до "Create a new tournament"
-  - Нажимаем кнопку "CREATE"
-   expected-result: |
-   Турнир создан, открывается страница ожидания турнира
+    - Открываем вкладку "TOURNAMENTS"
+    - Нажимаем кнопку "You may want to create one"
+    - Скролим ввниз до "Create a new tournament"
+    - Нажимаем кнопку "CREATE"
+  expected-result: |
+    Турнир создан, открывается страница ожидания турнира
+
+- summary: |
+    Проверка создания игры без регистрации
+  requirement: |
+    Пользователь должен иметь возможность создать игру без регистрации
+  prerequisites: |
+    Открыта начальная страница сайта
+  test-data: |
+    no-data
+  steps:
+    - Нажимаем на кнопку "TRY SIMPLE BATTLE"
+  expected-result: |
+    Открывается страница игры
