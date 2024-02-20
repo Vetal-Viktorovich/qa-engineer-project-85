@@ -6,10 +6,7 @@
   prerequisites: |
     Открыта страница регистрации
   test-data: |
-    Nickname = Ivan998
-    Email = Vanya@mail.ru
-    Password = zHP-wA7-7yy-xR3
-    Password Confirmation = zHP-wA7-7yy-xR3
+    no-data
   steps:
     - Вводим Nickname
     - Вводим Email
