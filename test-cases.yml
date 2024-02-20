@@ -173,14 +173,14 @@
   steps:
     - Выбираем нужный нам язык праграмирования , например "NodeJS"
     - Пишем код:
-     const _ = require("lodash");
-     const R = require("rambda");
+      const _ = require("lodash");
+      const R = require("rambda");
     
-     const solution = (width, length) => {
-     return width * length;
-     };
+      const solution = (width, length) => {
+      return width * length;
+      };
     
-     module.exports = solution;
+      module.exports = solution;
     - Нажимаем кнопку "Charging"
   expected-result: |
     Выводится окно с сообщение о победе
