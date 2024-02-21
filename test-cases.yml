@@ -169,18 +169,18 @@
   prerequisites: |
     Создана игра rect_area
   test-data: |
-    no-data
+    Решение:
+    const _ = require("lodash");
+    const R = require("rambda");
+    
+    const solution = (width, length) => {
+    return width * length;
+    };
+    
+    module.exports = solution;
   steps:
     - Выбираем нужный нам язык праграмирования , например "NodeJS"
-    - Пишем код:
-      const _ = require("lodash");
-      const R = require("rambda");
-    
-      const solution = (width, length) => {
-      return width * length;
-      };
-    
-      module.exports = solution;
+    - Пишем код(Решение)
     - Нажимаем кнопку "Charging"
   expected-result: |
-    Выводится окно с сообщение о победе
+    Игра закончена, выводится сообщение о победе
